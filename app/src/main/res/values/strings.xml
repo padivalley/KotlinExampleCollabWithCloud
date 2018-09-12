@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kotlin Example Collab With Cloud</string>
+    <string name="proses">Proses</string>
+    <string name="jumlah">Jumlah Barang</string>
+    <string name="harga">Harga Barang</string>
+    <string name="hasil">Kamu harus bayar</string>
 </resources>
