@@ -4,13 +4,13 @@ package com.example.itsupport.kotlinexamplecollabwithcloud
  * Created by Cloudymous on 13/09/2018.
  */
 
-class ListItem {
+class ListKaryawan {
     private var mNamaKaryawan: String? = null
     private var mNIPKaryawan: Int? = null
     private var mImageResource = NO_IMAGE_PROVIDED
     private val NO_IMAGE_PROVIDED = -1
 
-    fun ListKaryawan(namaKaryawan: String, NIPKaryawan: Int): ??? {
+    fun ListKaryawan(namaKaryawan: String, NIPKaryawan: Int) {
         mNamaKaryawan = namaKaryawan
         mNIPKaryawan = NIPKaryawan
     }

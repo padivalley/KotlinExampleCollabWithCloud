@@ -14,7 +14,7 @@ import java.util.ArrayList
  * Created by Cloudymous on 13/09/2018.
  */
 
-class ListKaryawanAdapter(context: Activity, words: ArrayList<ListItem>, private val mColorResorceId: Int) : ArrayAdapter<ListItem>(context, 0, words) {
+class ListKaryawanAdapter(context: Activity, words: ArrayList<ListKaryawan>, private val mColorResorceId: Int) : ArrayAdapter<ListKaryawan>(context, 0, words) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var listItemView = convertView
         if (listItemView == null) {
@@ -24,11 +24,11 @@ class ListKaryawanAdapter(context: Activity, words: ArrayList<ListItem>, private
 
         val currentPharases = getItem(position)
 
-        val miwokTextView = listItemView!!.findViewById(R.id.miwok_text_view) as TextView
-        miwokTextView.setText(currentPharases!!.getMiwokTranslation())
+        val miwokTextView = listItemView.findViewById(R.id.nama_karyawan_text_view) as TextView
+        miwokTextView.setText(currentPharases!!.getNamaKaryawan())
 
-        val defaultTextView = listItemView.findViewById(R.id.default_text_view) as TextView
-        defaultTextView.setText(currentPharases!!.getDefaultTranslation())
+        val defaultTextView = listItemView.findViewById(R.id.nip_karyawan_text_view) as TextView
+        defaultTextView.setText(currentPharases!!.getNIPKaryawan())
 
         val iconImageView = listItemView.findViewById(R.id.imageIcons) as ImageView
 
