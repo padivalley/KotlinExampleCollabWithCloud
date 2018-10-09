@@ -19,7 +19,7 @@ class ListKaryawanAdapter(context: Activity, words: ArrayList<ListKaryawan>, pri
         var listItemView = convertView
         if (listItemView == null) {
             listItemView = LayoutInflater.from(context).inflate(
-                    R.layout.list_item, parent, false)
+                    R.layout.list_karyawan, parent, false)
         }
 
         val currentPharases = getItem(position)

@@ -9,6 +9,7 @@
     android:orientation="horizontal">
 
     <ImageView
+        android:contentDescription="@string/foto_karyawan"
         android:id="@+id/imageIcons"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height" />

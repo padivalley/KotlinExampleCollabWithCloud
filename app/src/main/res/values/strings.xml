@@ -5,4 +5,5 @@
     <string name="harga">Harga Barang</string>
     <string name="hasil">Kamu harus bayar</string>
     <string name="karyawan">Karyawan</string>
+    <string name="foto_karyawan">foto karyawan</string>
 </resources>
