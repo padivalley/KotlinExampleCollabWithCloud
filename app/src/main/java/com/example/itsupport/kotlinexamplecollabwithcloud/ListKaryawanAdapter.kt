@@ -24,16 +24,16 @@ class ListKaryawanAdapter(context: Activity, words: ArrayList<ListKaryawan>, pri
 
         val currentPharases = getItem(position)
 
-        val miwokTextView = listItemView.findViewById(R.id.nama_karyawan_text_view) as TextView
-        miwokTextView.setText(currentPharases!!.getNamaKaryawan())
+        val namaKaryawanTv = listItemView.findViewById(R.id.nama_karyawan_text_view) as TextView
+        namaKaryawanTv.setText(currentPharases.getNamaKaryawan())
 
-        val defaultTextView = listItemView.findViewById(R.id.nip_karyawan_text_view) as TextView
-        defaultTextView.setText(currentPharases!!.getNIPKaryawan())
+        val nipKaryawanTv = listItemView.findViewById(R.id.nip_karyawan_text_view) as TextView
+        nipKaryawanTv.setText(currentPharases.getNIPKaryawan())
 
         val iconImageView = listItemView.findViewById(R.id.imageIcons) as ImageView
 
-        if (currentPharases!!.hasImage()) {
-            iconImageView.setImageResource(currentPharases!!.getImageResource())
+        if (currentPharases.hasImage()) {
+            iconImageView.setImageResource(currentPharases.getImageResource())
             iconImageView.visibility = View.VISIBLE
         } else {
             iconImageView.visibility = View.GONE
