@@ -25,11 +25,11 @@ class MainActivity : AppCompatActivity() {
 
             val hasilnya =  hitungPesanan(jumlahPesananEt, hargaPesananEt)
             val tampilHasil = (findViewById(R.id.Pembayaran)) as TextView
-            tampilHasil.setText(getString(R.string.hasil) + " " + hasilnya )
+            tampilHasil.setText(hasilnya)
         }
 
         karyawanMenu.setOnClickListener{
-            val intentKaryawan = Intent(this, KaryawanClass::class.java)
+            val intentKaryawan = Intent(this, TampilanMenu::class.java)
 
             if (intentKaryawan.resolveActivity(packageManager) != null) {
                 startActivity(intentKaryawan)
