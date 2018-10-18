@@ -4,13 +4,13 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.input_output.*
 
-class MainActivity : AppCompatActivity() {
+class InputOutput : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.input_output)
 
         Proses.setOnClickListener {
             val jumlahPesananEt = Integer.parseInt(JumlahPesanan.text.toString())
